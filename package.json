@@ -1,0 +1,24 @@
+{
+  "name": "chai-react-assertions",
+  "version": "0.0.1",
+  "description": "React assertion helpers for Chai",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momentumft/chai-react-assertions.git"
+  },
+  "keywords": [
+    "chai",
+    "react",
+    "reactjs"
+  ],
+  "author": "Momentum Financial Technology Ltd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/momentumft/chai-react-assertions/issues"
+  },
+  "homepage": "https://github.com/momentumft/chai-react-assertions#readme"
+}
