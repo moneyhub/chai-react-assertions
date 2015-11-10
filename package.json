@@ -4,8 +4,9 @@
   "description": "React assertion helpers for Chai",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel/register src/**/__tests__/*.js",
-    "watch-test": "mocha --compilers js:babel/register --watch src/**/__tests__/*.js",
+    "test": "scripts/test.sh",
+    "unit": "mocha --compilers js:babel/register src/**/__tests__/*.js",
+    "watch-unit": "mocha --compilers js:babel/register --watch src/**/__tests__/*.js",
     "build": "rm -rf lib/ && babel --out-dir lib/ src/",
     "watch": "rm -rf lib/ && babel --watch --out-dir lib/ src/",
     "lint": "eslint src/"
