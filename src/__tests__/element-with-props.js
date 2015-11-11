@@ -34,8 +34,16 @@ describe('elementWithProps assertion', function () {
     expect(this.tree).to.contain.elementWithProps('p', { align: 'center' })
   })
 
-  it('should\'t match elements with incorrect props', function () {
+  it('shouldn\'t match elements with incorrect props', function () {
     expect(this.tree).to.not.contain.elementWithProps('ProgressBar', { percent: 0.5 })
     expect(this.tree).to.not.contain.elementWithProps('p', { align: 'left' })
+  })
+
+  it('should match elements with wildcard display name and props', function () {
+    expect(this.tree).to.contain.elementWithProps('*', { children: 'Hello' })
+  })
+
+  it('shouldn\'t match text as children which spans across multiple elements', function () {
+    expect(this.tree).to.not.contain.elementWithProps('*', { children: 'Hello world' })
   })
 })
