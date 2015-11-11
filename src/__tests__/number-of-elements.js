@@ -18,7 +18,7 @@ describe('numberOfElements assertion', function () {
     )
   })
 
-  it('should return the number of matched elements by display name', function () {
-    expect(this.tree).to.have.numberOfElements('strong', 2)
+  it('should assert the number of matched elements by display name', function () {
+    expect(this.tree).to.contain.numberOfElements('strong', 2)
   })
 })
